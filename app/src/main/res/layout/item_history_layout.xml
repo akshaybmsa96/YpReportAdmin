@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="5dp"
+        android:background="@color/white"
+        android:elevation="1dp"
+        android:layout_margin="2dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_margin="2dp"
+            android:paddingLeft="5dp"
+            android:maxLines="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewQty"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toLeftOf="@+id/textViewTotalCost"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:text="Qty Used"
+            android:gravity="left" />
+
+
+        <TextView
+            android:id="@+id/textViewTotalCost"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:paddingRight="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:layout_alignParentEnd="true"
+            android:gravity="end" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

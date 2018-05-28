@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yp.com.akki.ypreportadmin.fragment.EmployeeAddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout"
+            android:padding="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextDate"
+                android:textStyle="bold"
+                android:focusable="false"
+                android:drawableLeft="@mipmap/ic_date_range"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutVendor"
+                android:hint="Vendor"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/editTextDate">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewVendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:inputType="text"
+                android:maxLength="100"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutItem"
+                android:hint="Item"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/textInputLayoutVendor">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:maxLength="1000"
+                android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutQty"
+                android:hint="Quantity"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/textInputLayoutItem">
+
+            <EditText
+                android:id="@+id/editTextQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:maxLength="1000"
+                android:inputType="number|numberDecimal"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutDiscount"
+                android:hint="Discount in %"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/textInputLayoutQty">
+
+
+            <EditText
+                android:id="@+id/editTextDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextQty"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:maxLength="12"
+                android:layout_marginTop="35dp"
+                android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutAmount"
+                android:hint="Amount"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/textInputLayoutDiscount">
+
+
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextDiscount"
+                android:layout_centerHorizontal="true"
+                android:maxLength="100"
+                android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:layout_marginTop="55dp"
+                android:text="Done"
+                android:focusable="false"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/textInputLayoutAmount"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

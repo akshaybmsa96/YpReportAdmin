@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="1dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:elevation="1dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewName"
+                android:padding="1dp"
+                android:paddingStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Employee Name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:padding="1dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/textViewDesignation"
+                android:text="Designation"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="14sp"
+                android:padding="1dp"
+                android:paddingStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/textViewAddress"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Presents"
+                android:textSize="14sp"
+                android:padding="1dp"
+                android:textColor="@color/amountColor"
+                android:paddingStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/textViewTotalPresents"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yp.com.akki.ypreport.fragment.AccountUpdateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="yp.com.akki.ypreport.fragment.EmployeeAddFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout"
+                android:padding="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextDate"
+                    android:drawableLeft="@mipmap/ic_date_range"
+                    android:text="12/04/2017"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:focusable="false">
+                </EditText>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="From Account"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/editTextDate"
+                    android:id="@+id/textInputAccountName">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editTextFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName|textCapWords"
+                        android:maxLength="100"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To Account"
+                    android:paddingLeft="5dp"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/textInputAccountName"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerToAc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/recbound_login"
+                        android:elevation="2dp"
+                        android:layout_below="@+id/textInputAccountName"
+                        android:layout_marginTop="40dp"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:layout_alignParentEnd="true" />
+
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInputBalance"
+                    android:hint="Amount"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/spinnerToAc">
+
+                    <EditText
+                        android:id="@+id/editTextBalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="12"
+                        android:inputType="number"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonUpdateAcount"
+                    android:layout_marginTop="55dp"
+                    android:text="Update"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/textInputBalance"/>
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentAttendance"
+    tools:context="yp.com.akki.ypreportadmin.fragment.AttendanceEntryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDate"
+        android:textStyle="bold"
+        android:focusable="false"
+        android:drawableLeft="@mipmap/ic_date_range"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonSubmit"
+        android:layout_below="@+id/editTextDate">
+
+        <yp.com.akki.ypreportadmin.lists.NonScrollRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:id="@+id/recyclerView">
+        </yp.com.akki.ypreportadmin.lists.NonScrollRecyclerView>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmit"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:background="@color/colorAccent"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:elevation="1dp"
+    android:padding="5dp"
+    android:background="@color/white"
+    android:layout_weight="10"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_margin="1dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:id="@+id/textViewName"
+        android:text="Vendor Name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:layout_margin="1dp"
+        android:id="@+id/textViewAddress"
+        android:text="Address"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:layout_margin="1dp"
+        android:id="@+id/textViewGSTNumber"
+        android:visibility="gone"
+        android:text="GST Number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:layout_margin="1dp"
+        android:textColor="@color/amountColor"
+        android:id="@+id/textViewAmount"
+        android:visibility="gone"
+        android:text="Amount"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="2dp"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/imageViewCall"
+            android:src="@mipmap/ic_call"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="3dp"
+    android:padding="5dp"
+    android:elevation="1dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewName"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="PNB"
+        android:padding="1dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewType"
+        android:textSize="14sp"
+        android:text="Bank"
+        android:padding="1dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewAmount"
+        android:textSize="18sp"
+        android:textColor="@color/amountColor"
+        android:textStyle="bold"
+        android:text="5000"
+        android:padding="1dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yp.com.akki.ypreportadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/report_icon"
+        android:name=".global.AppController"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ReportActivity" />
+        <activity android:name=".activity.Dashboard" />
+        <activity android:name=".activity.EmployeeEditActivity" />
+        <activity android:name=".activity.VendorEditActivity" />
+        <activity android:name=".activity.PurchaseReportActivity" />
+        <activity android:name=".activity.ExpenseReportActivity" />
+        <activity android:name=".activity.AttendanceReportActivity" />
+        <activity android:name=".activity.AttendanceDetailActivity" />
+        <activity android:name=".activity.AccountEditActivity" />
+        <activity android:name=".activity.AccountLogActivity" />
+        <activity android:name=".activity.ChooseDateActivity" />
+        <activity android:name=".activity.ReportFullActivity" />
+        <activity android:name=".activity.ItemEditActivity" />
+        <activity android:name=".activity.CentreEditActivity" />
+        <activity android:name=".activity.ReceivedPaymentReportActivity" />
+        <activity android:name=".activity.MaterialDistributionReportActivity" />
+        <activity android:name=".activity.StockEditActivity"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7dd0a29c189d54057b52bf8855c6aed5817f398e" />
+    </application>
+
+</manifest>

@@ -1,0 +1,166 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yp.com.akki.ypreportadmin.fragment.EmployeeAddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout"
+            android:padding="20dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextDate"
+                    android:textStyle="bold"
+                    android:focusable="false"
+                    android:drawableLeft="@mipmap/ic_date_range"/>
+
+
+
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:background="@drawable/recbound_login"
+                android:paddingBottom="7dp"
+                android:elevation="2dp"
+                android:layout_below="@+id/editTextDate"
+                android:layout_marginTop="35dp"
+                android:entries="@array/spinnerTypeValues"
+                android:inputType="number"
+                android:hint="Type - Vendor/Employee/Others"
+                android:layout_alignParentEnd="true" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutName"
+                android:hint="Name"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/spinnerType">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:maxLength="1000"
+                android:inputType="text|textCapWords" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinnerCategoryValues"
+                android:paddingTop="7dp"
+                android:elevation="2dp"
+                android:background="@drawable/recbound_login"
+                android:paddingBottom="7dp"
+                android:layout_below="@+id/textInputLayoutName"
+                android:layout_centerHorizontal="true"
+                android:maxLength="1000"
+                android:layout_marginTop="35dp"
+                android:inputType="number|numberDecimal" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutAmount"
+                android:hint="Amount"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/spinnerCategory">
+
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerCategory"
+                android:layout_centerHorizontal="true"
+                android:maxLength="100"
+                android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinnerPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textInputLayoutAmount"
+                android:entries="@array/spinnerModeOfPaymentValues"
+                android:background="@drawable/recbound_login"
+                android:layout_centerHorizontal="true"
+                android:elevation="2dp"
+                android:maxLength="12"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:layout_marginTop="35dp"
+                android:inputType="number"
+                android:hint="Mode Of Payment-DropDown" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutFrom"
+                android:hint="From A/C"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/spinnerPayment">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:maxLength="1200"
+                android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutTo"
+                android:layout_marginTop="30dp"
+                android:hint="To A/C"
+                android:layout_below="@+id/textInputLayoutFrom">
+
+            <EditText
+                android:id="@+id/editTextTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:maxLength="100"
+                android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonSubmit"
+                android:layout_marginTop="55dp"
+                android:text="Done"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/textInputLayoutTo"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

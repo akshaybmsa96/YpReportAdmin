@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="yp.com.akki.ypreport.fragment.EmployeeAddFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarframe">
+
+        <include android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar">
+        </include>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Employee Name"
+                android:id="@+id/textInputLayoutName">
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLength="100"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutDesignation"
+                android:hint="Designation"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/textInputLayoutName">
+
+            <EditText
+                android:id="@+id/editTextDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="100"
+                android:layout_centerHorizontal="true"
+                android:inputType="text|textCapWords"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutDate"
+                android:hint="Date Of Joining"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/textInputLayoutDesignation">
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutPhoneNumber"
+                android:hint="Phone Number"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/textInputLayoutDate">
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:inputType="number"
+                android:maxLength="10"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:layout_marginTop="25dp"
+                android:id="@+id/textInputLayoutAddress"
+                android:layout_below="@+id/textInputLayoutPhoneNumber">
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:maxLength="1000"
+                android:inputType="text|textCapWords"
+                 />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutSalary"
+                android:hint="Salary"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/textInputLayoutAddress">
+            <EditText
+                android:id="@+id/editTextSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:maxLength="1000"
+                android:inputType="number|numberDecimal"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutLeaves"
+                android:hint="Leaves Per Month"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/textInputLayoutSalary">
+
+            <EditText
+                android:id="@+id/editTextLeavesPerMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:maxLength="100"
+                android:inputType="number"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutAadhaar"
+                android:hint="Aadhaar Number"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/textInputLayoutLeaves">
+            <EditText
+                android:id="@+id/editTextAadhaarNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:maxLength="12"
+                android:inputType="number"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputBalance"
+                android:hint="Current Balance"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/textInputLayoutAadhaar">
+                <EditText
+                    android:id="@+id/editTextBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="12"
+                    android:inputType="numberSigned"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonEditEmployee"
+                android:layout_marginTop="55dp"
+                android:text="Done"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/textInputBalance"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

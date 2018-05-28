@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    android:background="#9E9E9E"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:layout_weight="7"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginRight="5dp"
+        android:maxLines="1"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonDeleteItem" />
+
+    <TextView
+        android:id="@+id/textViewQty"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/buttonDeleteItem"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/textViewItemName"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:gravity="left"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/buttonDeleteItem"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/textViewQty"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:gravity="left"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:id="@+id/buttonDeleteItem"
+        android:text="X"
+        android:clickable="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/Red"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context="yp.com.akki.ypreportadmin.fragment.AddItem">
+
+    <!-- TODO: Update blank fragment layout -->
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name"
+        android:id="@+id/autoCompleteTextViewItemName"
+        android:layout_marginLeft="30dp"
+        android:maxLines="1"
+        android:maxLength="100"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:layout_marginLeft="30dp"
+        android:maxLines="1"
+        android:maxLength="100"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:hint="Quantity"
+        android:layout_below="@+id/autoCompleteTextViewItemName"
+        android:id="@+id/editTextQty"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:layout_marginLeft="30dp"
+        android:maxLines="1"
+        android:maxLength="100"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:hint="Cost Per Unit"
+        android:layout_below="@+id/editTextQty"
+        android:id="@+id/editTextCostPerUnit"
+        />
+
+    <Button
+        android:text="DONE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/buttonDone"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

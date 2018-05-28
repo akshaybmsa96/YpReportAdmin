@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Yp Report Admin</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="rupeeSymbol">₹</string>
+
+    <string-array name="spinnerTypeValues">
+        <item>Vendor</item>
+        <item>Employee</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="spinnerCategoryValues">
+        <item>Raw Materials</item>
+        <item>Salary</item>
+        <item>Rent</item>
+        <item>Incentive</item>
+        <item>Electrical Maintenance</item>
+        <item>Mechanical Maintenance</item>
+        <item>Electric Bill</item>
+        <item>Phone Bill</item>
+        <item>Internet Bill</item>
+        <item>Repair work</item>
+        <item>Home Expenditure</item>
+        <item>Shop Expenditure</item>
+        <item>Refreshment</item>
+        <item>Investment</item>
+        <item>EMI</item>
+        <item>Accounting and Taxation</item>
+        <item>Equipment Purchase</item>
+        <item>Advertisement</item>
+        <item>Fuel(Petrol/CNG)</item>
+        <item>Freight</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="spinnerModeOfPaymentValues">
+        <item>CASH</item>
+        <item>MOBILE WALLET</item>
+        <item>CHEQUE</item>
+        <item>NEFT/IMPS/ATGS</item>
+    </string-array>
+
+
+    <string-array name="spinnerStoreTypeValues">
+        <item>SELF OWNED</item>
+        <item>FRANCHISE</item>
+        <item>CLIENT</item>
+    </string-array>
+
+    <string name="action_search">Search</string>
+
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+    <item name="search_edit_frame" type="id" />
+
+
+</resources>

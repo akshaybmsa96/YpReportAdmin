@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="5dp"
+        android:background="@color/white"
+        android:elevation="1dp"
+        android:layout_margin="1dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_margin="2dp"
+            android:paddingLeft="5dp"
+            android:maxLines="1" />
+
+
+        <TextView
+            android:id="@+id/textViewCategory"
+            android:textSize="12sp"
+            android:layout_below="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:gravity="left" />
+
+
+        <TextView
+            android:id="@+id/textViewType"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:paddingRight="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:gravity="left"
+            android:layout_below="@+id/textViewName"
+            android:layout_alignEnd="@+id/textViewName" />
+
+        <TextView
+            android:id="@+id/textViewAmount"
+            android:textSize="12sp"
+            android:layout_below="@+id/textViewCategory"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/textViewPaymentMode"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:paddingRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_height="wrap_content"
+            android:text="Payment mode"
+            android:gravity="left"
+            android:layout_below="@+id/textViewCategory"
+            android:layout_alignEnd="@+id/textViewName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewFromAc"
+            android:textSize="12sp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:text="From PNB"
+            android:layout_below="@+id/textViewAmount"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewToAc"
+            android:textSize="12sp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:text="To PNB"
+            android:gravity="right"
+            android:layout_below="@+id/textViewPaymentMode"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

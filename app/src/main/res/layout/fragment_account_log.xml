@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FROM :"
+                android:paddingLeft="15dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/editTextFromDate" />
+
+            <TextView
+                android:id="@+id/textViewTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:paddingLeft="15dp"
+                android:text="TO :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/editTextFromDate"
+                android:layout_alignStart="@+id/editTextToDate" />
+
+            <EditText
+                android:id="@+id/editTextFromDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="88dp"
+                android:drawableLeft="@mipmap/ic_date_range"
+                android:ems="12"
+                android:focusable="false"
+                android:inputType="textEmailAddress"
+                android:text="12/04/2017"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextToDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_date_range"
+                android:ems="12"
+                android:focusable="false"
+                android:inputType="textEmailAddress"
+                android:text="12/04/2017"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_alignStart="@+id/editTextFromDate" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editTextToDate"
+                android:layout_alignStart="@+id/editTextToDate"
+                android:layout_below="@+id/editTextToDate"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

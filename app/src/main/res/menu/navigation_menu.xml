@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Dashboard"
+        android:id="@+id/menuDashBoard">
+    </item>
+
+    <group >
+
+        <item android:title="Report"
+            android:id="@+id/report"
+            android:enabled="true">
+            <menu >
+                <item
+                    android:title="     Centre"
+                    android:id="@+id/menuCentreReport">
+                </item>
+
+                <item
+                    android:title="     Purchase"
+                    android:id="@+id/menuPurchaseReport">
+                </item>
+
+                <item
+                    android:title="     Expense"
+                    android:id="@+id/menuExpenseReport">
+                </item>
+
+                <item
+                    android:title="     Accounts Log"
+                    android:id="@+id/menuAccountLog">
+                </item>
+
+                <item
+                    android:title="     Accounts Balance"
+                    android:id="@+id/menuAccountBalance">
+                </item>
+
+
+                <item
+                    android:title="     Stores Balance"
+                    android:id="@+id/menuStoresBalance">
+                </item>
+
+
+                <item
+                    android:title="     Vendor Balance"
+                    android:id="@+id/menuVendorStatus">
+                </item>
+
+                <item
+                    android:title="     Employee Balance"
+                    android:id="@+id/menuEmployeeStatus">
+                </item>
+
+                <item
+                    android:title="     Material Distribution"
+                    android:id="@+id/materialDistributionReport">
+                </item>
+
+                <item
+                    android:title="     Received Payment"
+                    android:id="@+id/receivedPaymentReport">
+                </item>
+
+
+            </menu>
+        </item>
+
+
+        <item android:title="Accounts"
+            android:id="@+id/accounts">
+            <menu>
+                <item
+                    android:title="     Amount Update"
+                    android:id="@+id/menuAccountUpdate">
+                </item>
+
+                <item
+                    android:title="     Add"
+                    android:id="@+id/menuAccountAdd">
+                </item>
+
+                <item
+                    android:title="     Edit"
+                    android:id="@+id/menuAccountEdit">
+                </item>
+
+            </menu>
+        </item>
+
+
+        <item android:title="Item"
+            android:id="@+id/item">
+            <menu>
+
+                <item
+                    android:title="     Add"
+                    android:id="@+id/menuItemAdd">
+                </item>
+
+                <item
+                    android:title="     Edit"
+                    android:id="@+id/menuItemEdit">
+                </item>
+
+            </menu>
+        </item>
+
+        <item android:title="Stock"
+            android:id="@+id/stock">
+            <menu>
+
+                <item
+                    android:title="     Add"
+                    android:id="@+id/menuStockAdd">
+                </item>
+
+                <item
+                    android:title="     Edit"
+                    android:id="@+id/menuStockEdit">
+                </item>
+
+            </menu>
+        </item>
+
+
+    <item android:title="Vendor"
+        android:id="@+id/vendor">
+        <menu>
+
+            <item
+                android:title="     Add"
+                android:id="@+id/menuVendorAdd">
+            </item>
+
+            <item
+                android:title="     Edit"
+                android:id="@+id/menuVendorEdit">
+            </item>
+
+        </menu>
+    </item>
+
+    <item android:title="Employee"
+          android:id="@+id/employee">
+        <menu>
+
+
+            <item
+                android:title="     Attendance and Salary"
+                android:id="@+id/menuEmployeeAttendance">
+            </item>
+
+            <item
+                android:title="     Add"
+                android:id="@+id/menuEmployeeAdd">
+            </item>
+
+            <item
+                android:title="     Edit"
+                android:id="@+id/menuEmployeeEdit">
+            </item>
+
+        </menu>
+    </item>
+
+        <item android:title="Store"
+            android:id="@+id/store">
+            <menu>
+
+                <item
+                    android:title="     Add"
+                    android:id="@+id/menuCentreAdd">
+                </item>
+
+                <item
+                    android:title="     Edit"
+                    android:id="@+id/menuCentreEdit">
+                </item>
+
+            </menu>
+        </item>
+
+    <item
+        android:title="Entries"
+        android:id="@+id/menuEntries">
+        <menu>
+
+            <item
+                android:title="     Purchase"
+                android:id="@+id/menuPurchaseEntry">
+            </item>
+
+            <item
+                android:title="     Expenses"
+                android:id="@+id/menuExpenseEntry">
+            </item>
+
+
+            <item
+                android:title="     Attendance"
+                android:id="@+id/menuAttendanceEntry">
+            </item>
+
+            <item
+                android:title="     Material Distribution"
+                android:id="@+id/materialDistributionEntry">
+            </item>
+
+            <item
+                android:title="     Received Payment"
+                android:id="@+id/receivedPaymentEntry">
+            </item>
+
+        </menu>
+    </item>
+
+    </group>
+</menu>

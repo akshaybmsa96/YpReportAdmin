@@ -1,0 +1,161 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Stock Name"
+                android:id="@+id/textInputLayoutName">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="100"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutAssociatedItem"
+                android:layout_marginTop="30dp"
+                android:hint="Associated Items"
+                android:layout_below="@+id/textInputLayoutName">
+
+                <EditText
+                    android:id="@+id/editTextAssociatedItem"
+                    android:layout_width="match_parent"
+                    android:focusable="false"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextName"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="text|textCapWords"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutAddress"
+                android:layout_marginTop="30dp"
+                android:hint="Unit"
+                android:layout_below="@+id/textInputLayoutAssociatedItem">
+
+                <EditText
+                    android:id="@+id/editTextUnit"
+                    android:layout_width="match_parent"
+                    android:focusable="false"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextName"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="text|textCapWords"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutPhoneNumber"
+                android:layout_marginTop="30dp"
+                android:hint="Lower Limit"
+                android:layout_below="@+id/textInputLayoutAddress">
+
+                <EditText
+                    android:id="@+id/editTextLowerLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextAddress"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="100"
+                    android:inputType="numberDecimal"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutUpperLimit"
+                android:layout_marginTop="30dp"
+                android:hint="Upper Limit"
+                android:layout_below="@+id/textInputLayoutPhoneNumber">
+
+                <EditText
+                    android:id="@+id/editTextUpperLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextAddress"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="100"
+                    android:inputType="numberDecimal"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutCurrentStatus"
+                android:layout_marginTop="30dp"
+                android:hint="Current Status"
+                android:layout_below="@+id/textInputLayoutUpperLimit">
+
+
+
+                <EditText
+                    android:id="@+id/editTextCurrentStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextPhoneNumber"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="1000"
+                    android:inputType="numberDecimal"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonAddItem"
+                android:layout_marginTop="55dp"
+                android:text="Add To Stock"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/textInputLayoutCurrentStatus"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
+
